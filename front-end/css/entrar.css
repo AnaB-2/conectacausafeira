@@ -1,0 +1,132 @@
+    :root {
+      --vermelhoc: rgb(108, 47, 169);
+      --vermelhoe: rgb(161, 116, 177);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+
+
+    #user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #user img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+
+    #user a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    #user a:hover {
+      color: #a8dadc;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .login-container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 400px;
+      transition: transform 0.3s ease;
+    }
+
+
+    h2 {
+      text-align: center;
+      color: var(--vermelhoc);
+      margin-bottom: 24px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #fafafa;
+      transition: border 0.2s ease;
+    }
+
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      border-color: var(--vermelhoc);
+      outline: none;
+    }
+
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: var(--vermelhoe);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #links {
+      display: flex;
+      justify-content: center;
+      gap: 1REM;
+
+    }
+
+    #links a {
+
+      color: rgb(61, 61, 238);
+    }
+
+    .login-container a {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #b12626;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .login-container a:hover {
+      color: #911f1f;
+    }
+
+
+    main {
+      flex: 1;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Causa</title>
+</head>
+<body>
+    <h2>Meu Perfil</h2>
+
+<p id="nome"></p>
+<p id="email"></p>
+<p id="telefone"></p>
+
+<script>
+    const usuario = JSON.parse(
+    sessionStorage.getItem("usuarioLogado")
+);
+
+document.getElementById("nome").textContent =
+    usuario.nome;
+
+document.getElementById("email").textContent =
+    usuario.email;
+
+document.getElementById("telefone").textContent =
+    usuario.telefone;
+</script>
+</body>
+
+</html>
